@@ -1,11 +1,69 @@
 /*
  Theme Name:   WP Indigo Child
- Description:  WP Indigo Child Theme
+ Theme URI: https://vitathemes.com/theme/wp-indigo/
  Author:       Nils Hellerhoff
  Author URI:   https://nils-hellerhoff.de
+ Description:  WP Indigo Child Theme
  Template:     wp-indigo
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: blog, rtl-language-support, translation-ready, featured-images, theme-options
  Text Domain:  wp-indigo-child
+ Tested up to: 5.7
+ Requires PHP: 5.6
 */
+
+:root {
+	--box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p {
+	text-align: justify;
+    hyphens: auto;
+}
+
+code {
+	background-color: #333;
+	color: #ddd;
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 0px solid black;
+	border-radius: 10px;
+	box-shadow: var(--box-shadow);
+	font-family: 'Oxygen Mono', Monospace;
+	font-size: 12px;
+}
+
+code strong {
+	color: #ddd;
+	font-weight: bold;
+}
+
+img {
+	box-shadow: var(--box-shadow);
+}
+
+img.aligncenter {
+	position: relative;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+a, a:active, a:visited {
+	color: #3144b0;
+}
+
+.aligncenter {
+	margin: auto;
+}
+
+.wrapper-normal {
+	max-width: 800px;
+}
+
+/* hide wp-indigo */
+footer > p.extra {
+	display: none;
+}
